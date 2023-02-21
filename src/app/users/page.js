@@ -12,7 +12,7 @@ export default async function page() {
   const data = await fetchData();
   return (
     <div>
-      <Suspense fallback={<div>Loding.........................</div>}>
+      <Suspense fallback={<div>Loading.........................</div>}>
       {data?.map((item, index) => (
         <>
           <Link href={`users/${item?.id}`}>{item?.name} {item?.id}</Link>
