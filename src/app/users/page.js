@@ -4,7 +4,7 @@ import React, { Suspense } from 'react'
 const fetchData = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/users");
   const data = res.json();
-  throw new Error("Error from get data")
+  // throw new Error("Error from get data")
   return data;
 }
 
