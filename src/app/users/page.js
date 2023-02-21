@@ -1,7 +1,6 @@
 import Link from 'next/link'
 import React, { Suspense } from 'react'
 
-
 const fetchData = async () => {
   const res = await fetch("https://jsonplaceholder.typicode.com/users");
   const data = res.json();
