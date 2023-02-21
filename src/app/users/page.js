@@ -9,9 +9,7 @@ const fetchData = async () => {
 }
 
 export default async function page() {
-
   const data = await fetchData();
-
   return (
     <div>
       <Suspense fallback={<div>Loding.........................</div>}>
